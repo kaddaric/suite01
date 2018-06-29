@@ -7,6 +7,24 @@
 
 //  écrire votre code sous ce commentaire
 
+function isEven(nb){
+  let type = 0;
+  if (nb % 2 === 0){
+    type = 1;
+  }
+  return type;
+}
+
+function boostedEvenAddition(tabNb){
+  let sommePair = 0;
+  for (let i = 0; i < tabNb.length; i++) {
+    if (isEven(tabNb[i]) === 1) {
+      sommePair += tabNb[i];
+    }
+  }
+  return console.log(sommePair);
+}
+
 /*
   Test 1
   Résultat attendu : 10

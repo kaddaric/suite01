@@ -8,20 +8,28 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function isEvenConcat(nb){
+  let type = '';
+  if (nb % 2 === 0){
+    type = nb + ' est pair';
+  } else {
+    type = nb + ' est impair';
+  }
+  return type
+}
 /*
   Test 1
   Résultat attendu : "6 est pair"
 */
 
-isEvenConcat(6);
+console.log(isEvenConcat(6));
 
 /*
   Test 2
   Résultat attendu : "5 est impair"
 */
 
-isEvenConcat(5);
+console.log(isEvenConcat(5));
 
 /* DO NOT TOUCH */
 module.exports = {

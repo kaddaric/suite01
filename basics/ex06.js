@@ -11,41 +11,55 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function getHumanTypeByAge(nb){
+  let type = '';
+  if (isNaN(nb)) {
+    type = 'Veuillez inscrire un nombre';
+  } else if (nb < 1 || nb >= 124){
+    type = 'impossible... ou encore jamais vu';
+  } else if (nb < 12) {
+    type = 'enfant';
+  } else if (nb < 18) {
+    type = 'ado';
+  } else if (nb < 124) {
+    type = 'adulte';
+  }
+  return type;
+}
 /*
   Test 1
   Résultat attendu : "impossible... ou encore jamais vu"
 */
 
-getHumanTypeByAge(-5);
+console.log(getHumanTypeByAge(-5));
 
 /*
   Test 2
   Résultat attendu : "enfant"
 */
 
-getHumanTypeByAge(6);
+console.log(getHumanTypeByAge(6));
 
 /*
   Test 3
   Résultat attendu : "ado"
 */
 
-getHumanTypeByAge(17);
+console.log(getHumanTypeByAge(17));
 
 /*
   Test 4
   Résultat attendu : "adulte"
 */
 
-getHumanTypeByAge(33);
+console.log(getHumanTypeByAge(33));
 
 /*
   Test 5
   Résultat attendu : "impossible... ou encore jamais vu"
 */
 
-getHumanTypeByAge(140);
+console.log(getHumanTypeByAge(140));
 
 /* DO NOT TOUCH */
 module.exports = {

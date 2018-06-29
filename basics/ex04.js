@@ -8,20 +8,26 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function isEven(nb){
+  let type = 0;
+  if (nb % 2 === 0){
+    type = 1;
+  }
+  return type;
+}
 /*
   Test 1
   Résultat attendu : 1
 */
 
-isEven(6);
+console.log(isEven(6));
 
 /*
   Test 2
   Résultat attendu : 0
 */
 
-isEven(5);
+console.log(isEven(5));
 
 /* DO NOT TOUCH */
 module.exports = {
