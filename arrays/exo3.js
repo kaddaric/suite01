@@ -8,7 +8,11 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function editStringAt (str, position, char) {
+  let tabStr = str.split('');
+  tabStr[position] = char;
+  return tabStr.join('');
+}
 /*
   Test 1
   Résultat attendu : "Bondour"

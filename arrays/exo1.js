@@ -11,7 +11,11 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function getCharAt(str, pos) {
+  let char = [];
+  char = str[pos];
+  return char;
+}
 /*
   Test 1
   Résultat attendu : "j"

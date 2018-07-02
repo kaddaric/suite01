@@ -8,7 +8,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function editArrayAt (arr, position, value) {
+  arr[position] = value;
+  return arr;
+}
 /*
   Test 1
   Résultat attendu : ["bonjour", "ça", 5]

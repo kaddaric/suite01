@@ -13,6 +13,21 @@
 
 //  écrire votre code sous ce commentaire
 
+function shoppingList(tabPanier) {
+  let objPanier = {};
+  let ingredient;
+  for (let j = 0; j < tabPanier.length; j++){
+    for (let i = 0; i < tabPanier[j].length; i++){
+      ingredient = tabPanier[j][i];
+      objPanier[ingredient] = objPanier[ingredient] + 1;
+    }
+  }
+  
+  console.log(tabPanier[0][2]);
+  console.log(objPanier);
+  console.log(objPanier.orange);
+}
+
 /*
   Test 1
   Résultat attendu : {
