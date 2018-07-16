@@ -20,7 +20,7 @@ function retParam(nb){
   Test 1
   Résultat attendu: "5"
 */
-console.log(retParam(5));
+retParam(5);
 
 /* DO NOT TOUCH */
 module.exports = {

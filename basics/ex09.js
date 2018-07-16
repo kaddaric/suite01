@@ -22,7 +22,7 @@ function boostedEvenAddition(tabNb){
       sommePair += tabNb[i];
     }
   }
-  return console.log(sommePair);
+  return sommePair;
 }
 
 /*

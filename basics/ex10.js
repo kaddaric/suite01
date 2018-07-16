@@ -19,14 +19,18 @@ function shoppingList(tabPanier) {
   for (let j = 0; j < tabPanier.length; j++){
     for (let i = 0; i < tabPanier[j].length; i++){
       ingredient = tabPanier[j][i];
-      objPanier[ingredient] = objPanier[ingredient] + 1;
+      if (!objPanier[ingredient]) {
+        objPanier[ingredient] = 1;
+      } else {
+        objPanier[ingredient] = objPanier[ingredient] + 1;
+      } 
     }
   }
-  
-  console.log(tabPanier[0][2]);
-  console.log(objPanier);
-  console.log(objPanier.orange);
+  return objPanier;
 }
+
+true, 1, "coucou", {}, [] // truthy
+false, null, undefined, 0 // falsy
 
 /*
   Test 1

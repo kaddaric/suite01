@@ -19,9 +19,8 @@
 */
 
 function returnParameter(nb) {
-    return nb;
+    console.log(nb);
 }
 
 //  écrire votre code sous ce commentaire
-
-console.log(returnParameter(5));
+returnParameter(5);

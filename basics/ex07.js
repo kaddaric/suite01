@@ -20,13 +20,13 @@ function boostedAddition(tab) {
   Résultat attendu : 15
 */
 
-console.log(boostedAddition([4, 5, 6]));
+boostedAddition([4, 5, 6]);
 
 /*
   Test 2
   Résultat attendu : 44
 */
-console.log(boostedAddition([4, 4, 6, 8, 10, 12]));
+boostedAddition([4, 4, 6, 8, 10, 12]);
 
 /* DO NOT TOUCH */
 module.exports = {
